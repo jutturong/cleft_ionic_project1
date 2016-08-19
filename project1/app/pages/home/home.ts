@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController,MenuController } from 'ionic-angular';
+import {NavController,MenuController,ViewController } from 'ionic-angular';
 
 import { PageContentPage1 }  from '../page-content/page-content';
 
@@ -7,7 +7,10 @@ import { PageContentPage1 }  from '../page-content/page-content';
   templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
+    //@ViewChild(Nav) nav: Nav;
      public items:any;
+      public viewCtrl: ViewController;
+
   constructor(private navCtrl: NavController) {
 
     this.items=[
@@ -21,6 +24,18 @@ export class HomePage {
 
   }
 
+
+  openPage(items) {
+    // close the menu when clicking a link from the menu
+  //  this.menu.close();
+    // navigate to the new page if it is not the current page
+    this.navCtrl.setRoot(items.component);
+  }
+  
+
+  dismiss() {
+      this.viewCtrl.dismiss();
+    }
 
 
 
