@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {NavController,MenuController,ViewController } from 'ionic-angular';
 
 import { PageContentPage1 }  from '../page-content/page-content';
+//import { TabsPage } from '../tabs/tabs';
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -9,7 +10,7 @@ import { PageContentPage1 }  from '../page-content/page-content';
 export class HomePage {
     //@ViewChild(Nav) nav: Nav;
      public items:any;
-      public viewCtrl: ViewController;
+     public viewCtrl: ViewController;
 
   constructor(private navCtrl: NavController) {
 
@@ -31,11 +32,14 @@ export class HomePage {
     // navigate to the new page if it is not the current page
     this.navCtrl.setRoot(items.component);
   }
-  
 
-  dismiss() {
-      this.viewCtrl.dismiss();
-    }
+/*
+  goBack() {
+     //this.navCtrl.pop();
+      this.navCtrl.push(TabsPage);
+   }
+*/
+
 
 
 
