@@ -37,22 +37,21 @@
 </ion-header>
 -->
 
-
-
 <ion-header>
 
 <ion-toolbar>
    <ion-title>
-    <ion-icon name="md-contacts" ></ion-icon>
+     <!-- <ion-icon name="md-contacts" ></ion-icon> -->
    </ion-title>
-   <ion-buttons start>
-     <button small  (click)="dismiss()"    >
 
-       <span primary showWhen="ios">Cancel
-       </span>
+   <!--
+   <ion-buttons start>
+     <button  ><span primary showWhen="ios">Cancel</span>
      <ion-icon name="ios-arrow-dropdown-outline" showWhen="android,windows"></ion-icon>
      </button>
    </ion-buttons>
+ -->
+
 
 
 
@@ -61,14 +60,91 @@
 </ion-header>
 
 
-
-
-
-
-
-
-
-
 <ion-content padding>
+      <ion-card>
+     <ion-card-header>
+     <!--
+        <ion-list>
+          <button ion-item>
 
+
+        <ion-icon name="md-contacts" ></ion-icon>
+
+        <ion-avatar item-left>
+            <img src="image/230px-13900470_3PREOPERATION0.jpg"  >
+        </ion-avatar>
+
+             ภาวะปากแหว่ง-เพดานโหว่
+          </button>
+
+       <ion-icon name="md-contacts" ></ion-icon>
+
+
+
+     </ion-list>
+   -->
+
+     </ion-card-header>
+
+     <ion-card-content>
+          <ion-list>
+
+      <!--
+       " มีลักษณะปรากฏได้หลายอย่าง ได้แก่ "
+       <br>
+     -->
+
+    <!--  - ชนิดปากแหว่งอย่างเดียว  -->
+        <h1>   - ปากแหว่ง   </h1>
+        <br>
+
+       " ปากแหว่งข้างเดียวไม่สมบูรณ์  <br>  (Unilateral incomplete) "
+
+             <ion-avatar item-left>
+                <img src="image/119px-CleftLip1.svg.png">
+             </ion-avatar>
+
+
+
+            "ปากแหว่งข้างเดียวสมบูรณ์
+            <br>
+             (Unilateral complete)"
+
+             <ion-avatar item-left>
+                <img src="image/120px-Cleftlip2.svg.png">
+             </ion-avatar>
+
+
+             "ปากแหว่งสองข้างสมบูรณ์
+             <br>
+              (Bilateral complete)"
+
+              <ion-avatar item-left>
+                 <img src="image/120px-CleftLip3.png">
+              </ion-avatar>
+
+
+
+
+          </ion-list>
+              <h1>   - เพดานโหว่   </h1>
+              <br>
+              " พดานโหว่ไม่สมบูรณ์ <br>  (Incomplete cleft palate) "
+
+                    <ion-avatar item-left>
+                       <img src="image/120px-Cleftpalate3.png">
+                    </ion-avatar>
+
+
+          <ion-list>
+
+          </ion-list>
+
+
+
+     </ion-card-content>
+
+
+
+    </ion-card>
 </ion-content>
