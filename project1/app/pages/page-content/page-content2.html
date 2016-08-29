@@ -1,30 +1,91 @@
+
+
 <ion-header>
+
 <ion-toolbar>
-<ion-title>
-Description
-</ion-title>
-<ion-buttons start>
-<button (click)="dismiss()">
-<span primary showWhen="ios">Cancel</span>
-<ion-icon name="md-close" showWhen="android,windows"></ion-icon>
-</button>
-</ion-buttons>
-</ion-toolbar>
+   <ion-title>
+
+   </ion-title>
+
+
+
+
+
+
+ </ion-toolbar>
+
 </ion-header>
-<ion-content>
-<ion-list>
-<ion-item>
-<ion-avatar item-left>
-<img src="{{character.image}}">
-</ion-avatar>
-<h2>{{character.name}}</h2>
-<p>{{character.quote}}</p>
-</ion-item>
-<ion-item *ngFor="let item of character['items']">
-{{item.title}}
-<ion-note item-right>
-{{item.note}}
-</ion-note>
-</ion-item>
-</ion-list>
+
+
+<ion-content padding>
+      <ion-card>
+     <ion-card-header>
+
+          <h1>      <ion-icon name="ios-chatboxes-outline" item-right></ion-icon>    สาเหตุ      </h1>
+
+     </ion-card-header>
+
+     <ion-card-content>
+          <ion-list>
+
+
+
+
+
+  <ion-icon name="md-bulb" item-right></ion-icon>
+
+ สาเหตุการเกิดทั้งหมดยังไม่แน่ชัด  แต่จากการศึกษาที่ผ่านมาจะมีส่วนเกี่ยวข้องกับปัจจัย
+
+
+
+
+
+<!--
+       <button ion-item>
+          <ion-icon name="md-bulb" item-right></ion-icon>
+              โอกาสการเกิดใน ลูก
+
+       </button>
+-->
+
+
+   <br>
+   <br>
+
+      - ทางพันธุกรรมประมาณร้อยละ 20
+
+
+
+
+   <br>
+   <br>
+
+   - จากการสูบบุหรี่  หรือมีบุคคลในครอบครัวสูบบุหรี่  และมารดาดื่มแอลกอฮอล์
+   ร่วมด้วยประมาณ
+   ร้อยละ 63
+
+   <br>
+   <br>
+   - อาจเกิดจากกลุ่มมารดาที่มีภาวะเจ็บป่วยขณะตั้งครรภ์โดยรับประทานยาเองประมาณร้อยละ 17
+
+   <br>
+   <br>
+   - อาจเกี่ยวข้องกับปัจจัยทางสภาวะแวดล้อม เช่น สารเคมี  ยาบางชนิด  สิ่งเสพติด รังสี และภาวะขาดสารอาหารร่วมด้วย เป็นต้น
+
+          </ion-list>
+
+
+
+
+
+
+
+
+
+
+     </ion-card-content>
+
+
+
+    </ion-card>
 </ion-content>
