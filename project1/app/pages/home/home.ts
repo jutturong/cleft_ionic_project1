@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {NavController,MenuController,ViewController } from 'ionic-angular';
 
-import { PageContentPage1 }  from '../page-content/page-content';
+import { PageContentPage1 }  from '../page-content/page-content'; //ภาวะปากแหว่งเพดานโหว่
+import { PageContentPage3 }  from '../page-content/page-content3'; //ภาวะปากแหว่งเพดานโหว่
 //import { TabsPage } from '../tabs/tabs';
 
 @Component({
@@ -15,11 +16,11 @@ export class HomePage {
   constructor(private navCtrl: NavController) {
 
     this.items=[
-        { title:'ภาวะปากแหว่งเพานโหว่',description:'1',icon:'md-contacts',num:0,component: PageContentPage1 , image: 'image/avatar-frodo.jpg', },
-        { title:'สาเหตุ',description:'2',icon:'ios-git-compare-outline',num:1 , },
-        { title:'โอกาสจะเกิดซ้ำ',description:'3',icon:'ios-git-network-outline',num:2 , },
-        { title:'ปัญหาที่พบและการแก้ไข',description:'4',icon:'ios-image',num:3 , },
-        { title:'การดูแลรักษา ผ่าตัด และฟื้นฟูสภาพ',description:'5',icon:'ios-medal-outline',num:4},
+        { title:'ภาวะปากแหว่งเพานโหว่',description:'',icon:'ios-arrow-forward-outline',num:0,component: PageContentPage1 , image: 'image/avatar-frodo.jpg', },
+        { title:'สาเหตุ',description:'',icon:'ios-arrow-forward-outline',num:1 , },
+        { title:'โอกาสจะเกิดซ้ำ',description:'',icon:'ios-arrow-forward-outline',num:2 , component: PageContentPage3 , image: 'image/avatar-frodo.jpg',},
+        { title:'ปัญหาที่พบและการแก้ไข',description:'',icon:'ios-arrow-forward-outline',num:3 , },
+        { title:'การดูแลรักษา ผ่าตัด และฟื้นฟูสภาพ',description:'',icon:'ios-arrow-forward-outline',num:4},
       ];
 
 
