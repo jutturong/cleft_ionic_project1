@@ -2,8 +2,10 @@ import {Component} from '@angular/core';
 import {NavController,MenuController,ViewController } from 'ionic-angular';
 
 import { PageContentPage1 }  from '../page-content/page-content'; //ภาวะปากแหว่งเพดานโหว่
-import { PageContentPage2 }  from '../page-content/page-content2'; //ภาวะปากแหว่งเพดานโหว่
-import { PageContentPage3 }  from '../page-content/page-content3'; //ภาวะปากแหว่งเพดานโหว่
+import { PageContentPage2 }  from '../page-content/page-content2';
+import { PageContentPage3 }  from '../page-content/page-content3';
+import { PageContentPage4 }  from '../page-content/page-content4';
+import { PageContentPage5 }  from '../page-content/page-content5';
 //import { TabsPage } from '../tabs/tabs';
 
 @Component({
@@ -20,8 +22,8 @@ export class HomePage {
         { title:'ภาวะปากแหว่งเพานโหว่',description:'',icon:'ios-arrow-forward-outline',num:0,component: PageContentPage1 , image: 'image/avatar-frodo.jpg', },
         { title:'สาเหตุ',description:'',icon:'ios-arrow-forward-outline',num:1 ,  component: PageContentPage2 , image: 'image/avatar-frodo.jpg' },
         { title:'โอกาสจะเกิดซ้ำ',description:'',icon:'ios-arrow-forward-outline',num:2 , component: PageContentPage3 , image: 'image/avatar-frodo.jpg',},
-        { title:'ปัญหาที่พบและการแก้ไข',description:'',icon:'ios-arrow-forward-outline',num:3 , },
-        { title:'การดูแลรักษา ผ่าตัด และฟื้นฟูสภาพ',description:'',icon:'ios-arrow-forward-outline',num:4},
+        { title:'ปัญหาที่พบและการแก้ไข',description:'',icon:'ios-arrow-forward-outline',num:3 , component: PageContentPage4 , image: 'image/avatar-frodo.jpg', },
+        { title:'การดูแลรักษา ผ่าตัด และฟื้นฟูสภาพ',description:'',icon:'ios-arrow-forward-outline',num:4 , component: PageContentPage5 , image: 'image/avatar-frodo.jpg',},
       ];
 
 
