@@ -19,11 +19,12 @@ export class HomePage {
   constructor(private navCtrl: NavController) {
 
     this.items=[
-        { title:'ภาวะปากแหว่งเพานโหว่',description:'',icon:'ios-arrow-forward-outline',num:0,component: PageContentPage1 , image: 'image/avatar-frodo.jpg', },
-        { title:'สาเหตุ',description:'',icon:'ios-arrow-forward-outline',num:1 ,  component: PageContentPage2 , image: 'image/avatar-frodo.jpg' },
-        { title:'โอกาสจะเกิดซ้ำ',description:'',icon:'ios-arrow-forward-outline',num:2 , component: PageContentPage3 , image: 'image/avatar-frodo.jpg',},
-        { title:'ปัญหาที่พบและการแก้ไข',description:'',icon:'ios-arrow-forward-outline',num:3 , component: PageContentPage4 , image: 'image/avatar-frodo.jpg', },
-        { title:'การดูแลรักษา ผ่าตัด และฟื้นฟูสภาพ',description:'',icon:'ios-arrow-forward-outline',num:4 , component: PageContentPage5 , image: 'image/avatar-frodo.jpg',},
+        { title:'1.ภาวะปากแหว่งเพานโหว่',description:'',icon:'ios-arrow-forward-outline',num:0,component: PageContentPage1 , image: 'image/avatar-frodo.jpg', },
+        { title:'2.สาเหตุ',description:'',icon:'ios-arrow-forward-outline',num:1 ,  component: PageContentPage2 , image: 'image/avatar-frodo.jpg' },
+        { title:'3.โอกาสจะเกิดซ้ำ',description:'',icon:'ios-arrow-forward-outline',num:2 , component: PageContentPage3 , image: 'image/avatar-frodo.jpg',},
+        { title:'4.ปัญหาที่พบร่วมกับภาวะปากแหว่งเพดานโหว่',description:'',icon:'ios-arrow-forward-outline',num:3 , component: PageContentPage4 , image: 'image/avatar-frodo.jpg', },
+        { title:'5.แนวทางการดูแลรักษา',description:'',icon:'ios-arrow-forward-outline',num:4 , component: PageContentPage5 , image: 'image/avatar-frodo.jpg',},
+        { title:'6.การป้องกัน',description:'',icon:'ios-arrow-forward-outline',num:4 , component: PageContentPage5 , image: 'image/avatar-frodo.jpg',},
       ];
 
 
